@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#09090b"/>
+  <g transform="translate(8 8)">
+    <!-- Map background -->
+    <rect x="0" y="0" width="48" height="48" rx="4" fill="#5a8c4a" stroke="#3a6b35" stroke-width="1"/>
+    <!-- Path -->
+    <path d="M 4 12 L 24 12 L 24 36 L 44 36" fill="none" stroke="#8b7355" stroke-width="6" stroke-linecap="round"/>
+    <!-- Tower (archer) -->
+    <circle cx="24" cy="24" r="5" fill="#10b981" stroke="#fbbf24" stroke-width="1.5"/>
+    <!-- Enemy -->
+    <circle cx="44" cy="36" r="3" fill="#ef4444"/>
+  </g>
+</svg>
