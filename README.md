@@ -9,6 +9,7 @@
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Vitest](https://img.shields.io/badge/Tests-Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)](https://vitest.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-21B357?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](./LICENSE)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NOSOLUTIONLOVE/Web_Game_06_Tower_Defense)
 
 <br />
@@ -324,7 +325,9 @@ The MVP and V2 scope from the PRD are complete. Possible future work:
 
 ## License
 
-This project is currently **not licensed for redistribution**. All rights reserved by the author. If you'd like to use or fork this code, please open an issue or reach out first.
+This project is licensed under the **MIT License** — see [LICENSE](./LICENSE).
+
+Copyright © 2026 Carl Shen. You are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of this software, provided the copyright notice and permission notice are included in all copies or substantial portions of the Software.
 
 ---
 

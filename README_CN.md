@@ -9,6 +9,7 @@
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Vitest](https://img.shields.io/badge/Tests-Vitest-6E9F18?style=for-the-badge&logo=vitest&logoColor=white)](https://vitest.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-21B357?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](./LICENSE)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NOSOLUTIONLOVE/Web_Game_06_Tower_Defense)
 
 <br />
@@ -377,7 +378,9 @@ PRD 中的 MVP 与 V2 范围已完成。未来可能的方向：
 
 ## 许可证
 
-本项目目前**未授权再分发**，所有权利由作者保留。如需使用或 fork 本代码，请先提 issue 或与我联系。
+本项目基于 **MIT License** 开源 —— 详见 [LICENSE](./LICENSE)。
+
+版权所有 © 2026 Carl Shen。在保留版权声明与许可声明的前提下，你可自由使用、复制、修改、合并、发布、分发、再授权及/或销售本软件的副本。
 
 ---
 
