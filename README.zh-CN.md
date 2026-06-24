@@ -1,6 +1,6 @@
 <div align="center">
 
-# 塔防 Web（Tower Defense Web）
+# 🏰 塔防 Web（Tower Defense Web）
 
 > 一款基于自研 Canvas 2D 引擎、React 18 与 TypeScript 构建的像素风塔防游戏 —— 内置 5 个手工关卡、3 种塔、5 种敌人、A\* 寻路与对象池化游戏循环，稳定运行于 60 FPS。
 
@@ -12,58 +12,25 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-21B357?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](./LICENSE)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NOSOLUTIONLOVE/Web_Game_06_Tower_Defense)
 
+**[English](README.md)** · **[中文](README.zh-CN.md)**
+
 <br />
 
-**[English README](./README.md)**
+[在线演示](#在线演示) · [核心特性](#核心特性) · [玩法说明](#玩法说明) · [快速开始](#快速开始) · [项目架构](#项目架构) · [技术栈](#技术栈) · [测试](#测试) · [后续规划](#后续规划) · [许可证](#许可证)
 
 </div>
 
 ---
 
-## 目录
-
-> 点击下方任意条目即可跳转到对应章节。
-
-- [塔防 Web（Tower Defense Web）](#塔防-webtower-defense-web)
-  - [目录](#目录)
-  - [项目简介](#项目简介)
-  - [在线演示](#在线演示)
-  - [核心特性](#核心特性)
-    - [玩法系统](#玩法系统)
-    - [引擎与技术](#引擎与技术)
-    - [交互与界面](#交互与界面)
-    - [质量与工具链](#质量与工具链)
-  - [玩法说明](#玩法说明)
-    - [如何游玩](#如何游玩)
-    - [策略建议](#策略建议)
-    - [计分规则](#计分规则)
-  - [快速开始](#快速开始)
-    - [前置依赖](#前置依赖)
-    - [安装与运行](#安装与运行)
-    - [部署到 Vercel](#部署到-vercel)
-  - [项目架构](#项目架构)
-    - [引擎与 UI 的桥接](#引擎与-ui-的桥接)
-    - [状态机](#状态机)
-  - [技术栈](#技术栈)
-  - [架构决策说明](#架构决策说明)
-  - [测试](#测试)
-  - [后续规划](#后续规划)
-  - [致谢](#致谢)
-  - [许可证](#许可证)
-
----
-
-## 项目简介
+## 🌟 项目简介
 
 **塔防 Web** 是一款浏览器策略游戏：玩家在网格地图上建造防御塔，阻止一波波敌人抵达基地。这是我个人 Web Game 系列的第 6 个项目，采用"v2.0 质量优先栈"工程化实现 —— 自研的框架无关游戏引擎与 React UI 层严格分离，全程 TypeScript 强类型，并由单元测试守护。
 
 该项目展示了一条完整的游戏开发流水线：从自研 Canvas 2D 像素风渲染器、A\* 寻路，到波次 / 经济 / 战斗系统，再到 Vercel 部署。它被设计为一份作品集案例，在小而聚焦的代码库中体现生产级工程实践。
 
-[⬆ 返回目录](#目录)
-
 ---
 
-## 在线演示
+## 🎮 在线演示
 
 本项目作为静态 SPA 部署在 Vercel，可在任意现代桌面浏览器中打开：
 
@@ -79,11 +46,9 @@ npm run dev
 # 打开 http://localhost:5173
 ```
 
-[⬆ 返回目录](#目录)
-
 ---
 
-## 核心特性
+## 🎯 核心特性
 
 ### 玩法系统
 
@@ -133,11 +98,9 @@ npm run dev
 - **ESLint + Prettier** —— 强制代码风格与 React Hooks 规则。
 - **Vercel 开箱即用** —— `vercel.json` 配置 SPA rewrites，刷新子路由不会 404。
 
-[⬆ 返回目录](#目录)
-
 ---
 
-## 玩法说明
+## 🎹 玩法说明
 
 ### 如何游玩
 
@@ -167,11 +130,9 @@ npm run dev
 | 清完一波 | +25 金币（普通波）/ +100 金币（Boss 波） |
 | 最终得分 | `剩余生命 × 100 + 剩余金币` |
 
-[⬆ 返回目录](#目录)
-
 ---
 
-## 快速开始
+## 🚀 快速开始
 
 ### 前置依赖
 
@@ -207,11 +168,9 @@ npm run preview   # 本地预览生产构建
 - **CLI：** 在 `tower-defense/` 目录下执行 `npx vercel`。
 - **Dashboard：** 在 [vercel.com](https://vercel.com) 导入仓库，将 Root Directory 设为 `tower-defense`，接受自动识别的 Vite 预设即可。
 
-[⬆ 返回目录](#目录)
-
 ---
 
-## 项目架构
+## 🏛️ 项目架构
 
 代码库严格分离 **引擎层**（框架无关的游戏逻辑）与 **UI 层**（React 表现层）。引擎层零 React 引用，可被任意其他渲染器复用（例如 Phaser 移植或服务端权威多人分支）。
 
@@ -288,11 +247,9 @@ MENU ──start──▶ LEVEL_SELECT ──select──▶ PLAYING ──pause
                      └────────────────── WIN / OVER
 ```
 
-[⬆ 返回目录](#目录)
-
 ---
 
-## 技术栈
+## 🛠️ 技术栈
 
 | 层 | 选型 | 理由 |
 |----|------|------|
@@ -310,11 +267,9 @@ MENU ──start──▶ LEVEL_SELECT ──select──▶ PLAYING ──pause
 | **Lint / 格式化** | ESLint 8 + Prettier 3 | 强制风格与 React Hooks 规则 |
 | **部署** | Vercel | 零配置静态 SPA 托管 + rewrites |
 
-[⬆ 返回目录](#目录)
-
 ---
 
-## 架构决策说明
+## 💡 架构决策说明
 
 以下几处非显而易见的设计选择，值得向作品集评审者说明：
 
@@ -324,11 +279,9 @@ MENU ──start──▶ LEVEL_SELECT ──select──▶ PLAYING ──pause
 4. **默认对象池化。** 敌人、子弹、粒子全部走对象池。对当前敌人规模而言是过度设计，但展示了正确的扩展模式 —— 可平滑支撑 100+ 同屏实体。
 5. **合成音频。** 所有音效在运行时由振荡器生成 —— 无音频文件下载、无授权问题，整个音频模块约 200 行。
 
-[⬆ 返回目录](#目录)
-
 ---
 
-## 测试
+## 🧪 测试
 
 引擎内置 7 套 Vitest 测试，覆盖核心系统：
 
@@ -347,11 +300,9 @@ npm test           # 一次性运行所有测试
 npm run test:watch # TDD 观察模式
 ```
 
-[⬆ 返回目录](#目录)
-
 ---
 
-## 后续规划
+## 🗺️ 后续规划
 
 PRD 中的 MVP 与 V2 范围已完成。未来可能的方向：
 
@@ -361,22 +312,18 @@ PRD 中的 MVP 与 V2 范围已完成。未来可能的方向：
 - **每日挑战** —— 种子随机关卡 + 排行榜
 - **移动端操控** —— 触控友好的命中区域与双指缩放
 
-[⬆ 返回目录](#目录)
-
 ---
 
-## 致谢
+## 🙏 致谢
 
 - **设计参考：** [Bloons TD](https://ninjakiwi.com/) 与 [Kingdom Rush](https://www.ironhidegames.com/) 的波次节奏与塔角色原型。
 - **A\* 算法：** 标准 8 方向实现 + 禁止穿墙角，参考 [Red Blob Games 寻路指南](https://www.redblobgames.com/pathfinding/a-star/introduction.html)。
 - **shadcn/ui** 提供可访问的组件基础。
 - **Tailwind CSS** 提供工具类优先的样式工作流。
 
-[⬆ 返回目录](#目录)
-
 ---
 
-## 许可证
+## 📄 许可证
 
 本项目基于 **MIT License** 开源 —— 详见 [LICENSE](./LICENSE)。
 
@@ -386,8 +333,8 @@ PRD 中的 MVP 与 V2 范围已完成。未来可能的方向：
 
 <div align="center">
 
-**[⬆ 返回顶部](#塔防webtower-defense-web)** · **[English README](./README.md)**
+**如果这个项目对你有帮助，请给个 ⭐ Star！**
 
-本项目为我个人 Web Game 系列的第 6 个作品。
+[GitHub](https://github.com/NOSOLUTIONLOVE/Web_Game_06_Tower_Defense) · [在线演示](https://web-game-06-tower-defense.vercel.app) · [Issue 反馈](https://github.com/NOSOLUTIONLOVE/Web_Game_06_Tower_Defense/issues)
 
 </div>

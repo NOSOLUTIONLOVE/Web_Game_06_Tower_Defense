@@ -1,6 +1,6 @@
 <div align="center">
 
-# Tower Defense Web
+# 🏰 Tower Defense Web
 
 > A pixel-art tower defense game built with a custom Canvas 2D engine, React 18, and TypeScript — featuring 5 hand-crafted levels, 3 tower types, 5 enemy types, A\* pathfinding, and an entity-pooled game loop running at 60 FPS.
 
@@ -12,17 +12,17 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-21B357?style=for-the-badge&logo=opensourceinitiative&logoColor=white)](./LICENSE)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NOSOLUTIONLOVE/Web_Game_06_Tower_Defense)
 
+**[English](README.md)** · **[中文](README.zh-CN.md)**
+
 <br />
 
-[Live Demo](#-live-demo) · [Features](#-features) · [Gameplay](#-gameplay) · [Quick Start](#-quick-start) · [Architecture](#-architecture) · [Tech Stack](#-tech-stack) · [License](#-license)
-
-**[中文说明](./README_CN.md)**
+[Live Demo](#-live-demo) · [Features](#-features) · [Gameplay](#-gameplay) · [Quick Start](#-quick-start) · [Architecture](#-architecture) · [Tech Stack](#-tech-stack) · [Testing](#-testing) · [Roadmap](#-roadmap) · [Acknowledgements](#-acknowledgements) · [License](#-license)
 
 </div>
 
 ---
 
-## Overview
+## 🌟 Overview
 
 **Tower Defense Web** is a browser-based strategy game where players build defensive towers on a grid map to stop waves of enemies from reaching their base. It is the 6th project in my personal Web Game series, engineered with a "quality-first v2.0 stack": a framework-agnostic game engine separated from a React UI layer, fully typed with TypeScript, and validated by unit tests.
 
@@ -30,7 +30,7 @@ The project demonstrates a complete game-development pipeline — from a custom 
 
 ---
 
-## Live Demo
+## 🎮 Live Demo
 
 The game is deployed as a static SPA on Vercel. Open it in any modern desktop browser:
 
@@ -48,7 +48,7 @@ npm run dev
 
 ---
 
-## Features
+## 🎯 Features
 
 ### Core Gameplay
 
@@ -100,7 +100,7 @@ npm run dev
 
 ---
 
-## Gameplay
+## 🎹 Gameplay
 
 ### How to Play
 
@@ -132,7 +132,7 @@ npm run dev
 
 ---
 
-## Quick Start
+## 🚀 Quick Start
 
 ### Prerequisites
 
@@ -170,7 +170,7 @@ The repo includes `vercel.json` with SPA rewrites. Two ways to deploy:
 
 ---
 
-## Architecture
+## 🏛️ Architecture
 
 The codebase enforces a strict separation between the **engine** (framework-agnostic game logic) and the **UI** (React presentation layer). The engine has zero React imports and could be reused in any other renderer (e.g. a Phaser port or a headless server-authoritative backend).
 
@@ -249,7 +249,7 @@ MENU ──start──▶ LEVEL_SELECT ──select──▶ PLAYING ──pause
 
 ---
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 | Layer | Choice | Why |
 |-------|--------|-----|
@@ -269,7 +269,7 @@ MENU ──start──▶ LEVEL_SELECT ──select──▶ PLAYING ──pause
 
 ---
 
-## Project Structure Decisions
+## 💡 Project Structure Decisions
 
 A few non-obvious choices worth highlighting for portfolio reviewers:
 
@@ -281,7 +281,7 @@ A few non-obvious choices worth highlighting for portfolio reviewers:
 
 ---
 
-## Testing
+## 🧪 Testing
 
 The engine ships with 7 Vitest suites covering the core systems:
 
@@ -302,7 +302,7 @@ npm run test:watch # watch mode for TDD
 
 ---
 
-## Roadmap
+## 🗺️ Roadmap
 
 The MVP and V2 scope from the PRD are complete. Possible future work:
 
@@ -314,7 +314,7 @@ The MVP and V2 scope from the PRD are complete. Possible future work:
 
 ---
 
-## Acknowledgements
+## 🙏 Acknowledgements
 
 - **Design references:** [Bloons TD](https://ninjakiwi.com/) and [Kingdom Rush](https://www.ironhidegames.com/) for wave pacing and tower role archetypes.
 - **A\* algorithm:** Standard 8-direction implementation with corner-blocking, inspired by the [Red Blob Games pathfinding guide](https://www.redblobgames.com/pathfinding/a-star/introduction.html).
@@ -323,7 +323,7 @@ The MVP and V2 scope from the PRD are complete. Possible future work:
 
 ---
 
-## License
+## 📄 License
 
 This project is licensed under the **MIT License** — see [LICENSE](./LICENSE).
 
@@ -333,8 +333,8 @@ Copyright © 2026 Carl Shen. You are free to use, copy, modify, merge, publish, 
 
 <div align="center">
 
-**[⬆ Back to Top](#tower-defense-web)** · **[中文说明](./README_CN.md)**
+**If this project helps you, please give it a ⭐ Star!**
 
-Built as project #6 of my personal Web Game series.
+[GitHub](https://github.com/NOSOLUTIONLOVE/Web_Game_06_Tower_Defense) · [Live Demo](https://web-game-06-tower-defense.vercel.app) · [Issue Feedback](https://github.com/NOSOLUTIONLOVE/Web_Game_06_Tower_Defense/issues)
 
 </div>
